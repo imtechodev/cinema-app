@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.screenWrap {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.screen {
+  display: inline-block;
+  width: min(480px, 90%);
+  height: 7px;
+  background: linear-gradient(90deg, transparent, #e8b84b 20%, #fff 50%, #e8b84b 80%, transparent);
+  border-radius: 50%;
+  box-shadow: 0 0 40px 8px rgba(232,184,75,0.18), 0 0 80px 24px rgba(232,184,75,0.07);
+  margin-bottom: 8px;
+}
+
+.screenLabel {
+  font-size: 0.62rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #7070a0;
+}
+
+.hall {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rowLabel {
+  font-size: 0.68rem;
+  color: #7070a0;
+  width: 18px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.seatsGroup {
+  display: flex;
+  gap: 5px;
+}
+
+.gap { width: 14px; }
+
+.legend {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.72rem;
+  color: #7070a0;
+}
+
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  border-radius: 3px 3px 2px 2px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .seatsGroup { gap: 4px; }
+  .row { gap: 4px; }
+  .gap { width: 10px; }
+}
